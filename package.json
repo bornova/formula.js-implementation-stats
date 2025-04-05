@@ -1,0 +1,14 @@
+{
+  "name": "@bornova/formula.js-implementation-stats",
+  "version": "1.0.0",
+  "description": "Generates Excel implementation stats for Formula.js library",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "stats": "node stats.js"
+  },
+  "devDependencies": {
+    "@formulajs/formulajs": "^4.4.11",
+    "jsdom": "^26.0.0"
+  }
+}

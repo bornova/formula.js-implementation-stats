@@ -1,0 +1,6 @@
+# Directories
+.devcontainer
+node_modules
+
+# Files
+IMPLEMENTATION_STATS.md
