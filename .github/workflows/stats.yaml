@@ -24,7 +24,7 @@ jobs:
           git config --global user.email "${{ secrets.EMAIL }}"
           git config --global user.name "${{ secrets.NAME }}"
 
-          git add IMPLEMENTATION_STATS.md
+          git add -A
           git commit -m "Updated implementation stats"
           git push origin HEAD:main --force
 
