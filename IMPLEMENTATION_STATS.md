@@ -1,5 +1,5 @@
 ## Excel functions implemented in Formula.js
-As of Sun, 06 Apr 2025 19:01:40 GMT 
+As of Sun, 06 Apr 2025 19:24:58 GMT 
 
  | Function Name | Category | Description | Implemented |
  | :--- | :--- | :--- | :--- |
