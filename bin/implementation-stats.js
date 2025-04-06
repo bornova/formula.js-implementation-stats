@@ -2,6 +2,7 @@ import { writeFileSync } from 'fs'
 import { JSDOM } from 'jsdom'
 import * as formulajs from '@formulajs/formulajs'
 
+const FILE_NAME = 'IMPLEMENTATION_STATS.md'
 const URL =
   'https://support.microsoft.com/en-us/office/excel-functions-alphabetical-b3944572-255d-4efb-bb96-c6d90033e188'
 
@@ -44,6 +45,12 @@ function generateMarkdownTable(stats) {
   return pageTitle + tableHeader + tableRows
 }
 
+/**
+ * Fetches data from the specified URL, processes it, and generates a Markdown file with implementation stats.
+ *
+ * The function fetches the HTML content of the page, parses it to extract function details,
+ * checks if the functions are implemented in Formula.js, and writes the results to a Markdown file.
+ */
 async function fetchAndProcessData() {
   const stats = []
 
@@ -77,9 +84,9 @@ async function fetchAndProcessData() {
 
     const table = generateMarkdownTable(stats)
 
-    writeFileSync('IMPLEMENTATION_STATS.md', table)
+    writeFileSync(FILE_NAME, table)
 
-    console.log('IMPLEMENTATION_STATS.md has been successfully generated.')
+    console.log(`${FILE_NAME} has been successfully generated.`)
   } catch (err) {
     console.error(`Failed to fetch or process data: ${err.message}`)
   }
