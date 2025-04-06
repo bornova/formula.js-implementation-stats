@@ -20,7 +20,7 @@ jobs:
         run: npm i @formulajs/formulajs jsdom
 
       - name: Generate stats
-        run: npm run stats
+        run: node bin/implementation-stats.js
 
       - name: Commit and push changes
         run: |
